@@ -9,6 +9,10 @@ import {
 } from 'redux/contacts/selectors';
 import { ContactList, ContactsFilter, ContactsForm } from 'components';
 
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+
 export default function Contacts() {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
@@ -20,20 +24,39 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>Phonebook</h2>
+    <Box
+      sx={{
+        display: { xs: 'flex' },
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <Divider sx={{ width: 1, pt: 2, pb: 1 }}>
+        <Typography variant="h5" sx={{ fontWeight: 700 }}>
+          Add new contact
+        </Typography>
+      </Divider>
+
       <ContactsForm />
-      <h2>Contacts</h2>
+
+      <Divider sx={{ width: 1, pt: 2, pb: 1 }}>
+        <Typography variant="h5" sx={{ fontWeight: 700 }}>
+          Contacts
+        </Typography>
+      </Divider>
+
       {contacts.length ? (
-        <div>
+        <>
           <ContactsFilter />
           <ContactList />
-        </div>
+        </>
       ) : (
         <p>No any contacts in phonebook</p>
       )}
       {isLoading && !error && <h2>Loading...</h2>}
-    </div>
+
+      <Divider sx={{ width: 1, pt: 2, pb: 1 }} />
+    </Box>
   );
 }
 

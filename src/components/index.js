@@ -9,3 +9,4 @@ export { UserMenu } from './UserMenu/UserMenu';
 export { ContactsForm } from './ContactsForm/ContactsForm';
 export { ContactsFilter } from './ContactsFilter/ContactsFilter';
 export { ContactList } from './ContactList/ContactList';
+export { Footer } from './Footer/Footer';

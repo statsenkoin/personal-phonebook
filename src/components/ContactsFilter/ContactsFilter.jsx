@@ -3,7 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { setFilter } from 'redux/contacts/filterSlice';
 import { selectFilterValue } from 'redux/contacts/selectors';
-// import { FilterWrapper, FilterInput } from './Filter.styled';
+
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
 export function ContactsFilter() {
   const dispatch = useDispatch();
@@ -12,10 +14,23 @@ export function ContactsFilter() {
   const onFilter = e => dispatch(setFilter(e.target.value));
 
   return (
-    <label>
-      Find contacts by name
-      <input type="text" value={filter} onChange={onFilter} />
-    </label>
+    <Box
+      component="form"
+      noValidate
+      autoComplete="off"
+      sx={{ '& > :not(style)': { m: 1, width: 350 } }}
+    >
+      <TextField
+        id="outlined-basic"
+        label="Find contacts by name"
+        variant="outlined"
+        type="text"
+        size="small"
+        value={filter}
+        onChange={onFilter}
+        fullWidth
+      />
+    </Box>
   );
 }
 
