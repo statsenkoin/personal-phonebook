@@ -35,7 +35,7 @@ export function RegisterForm() {
           resetForm();
         }}
       >
-        <Form>
+        <Form autoComplete="off">
           <Box marginY={1} sx={{ width: 350 }}>
             <Field
               component={TextField}
