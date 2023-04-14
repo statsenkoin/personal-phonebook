@@ -1,17 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import 'yup-phone-lite';
 import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
-// import {
-//   FormWrapper,
-//   Label,
-//   AddContactButton,
-//   ErrorText,
-// } from './FormikForm.styled';
+import { TextField } from 'formik-mui';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 const SubmitSchema = Yup.object().shape({
   name: Yup.string().required('Enter contact name'),
@@ -47,15 +44,29 @@ export function ContactsForm() {
         }}
       >
         <Form>
-          <label htmlFor="name">Name:</label>
-          <Field type="text" name="name" />
-          <ErrorMessage name="name" component="span"></ErrorMessage>
-
-          <label htmlFor="number">Number:</label>
-          <Field type="tel" name="number" />
-          <ErrorMessage name="number" component="span"></ErrorMessage>
-
-          <button type="submit">Add contact</button>
+          <Box marginY={1} sx={{ width: 350 }}>
+            <Field
+              component={TextField}
+              type="name"
+              label="Name*"
+              name="name"
+              size="small"
+              fullWidth
+            />
+          </Box>
+          <Box marginY={1}>
+            <Field
+              component={TextField}
+              type="tel"
+              label="Number*"
+              name="number"
+              size="small"
+              fullWidth
+            />
+          </Box>
+          <Button variant="contained" type="submit" fullWidth>
+            Add contact
+          </Button>
         </Form>
       </Formik>
     </div>
