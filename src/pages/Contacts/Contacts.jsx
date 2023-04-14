@@ -53,6 +53,7 @@ export default function Contacts() {
       ) : (
         <p>No any contacts in phonebook</p>
       )}
+
       {isLoading && !error && <h2>Loading...</h2>}
 
       <Divider sx={{ width: 1, pt: 2, pb: 1 }} />
