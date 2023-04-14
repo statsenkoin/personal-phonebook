@@ -1,7 +1,6 @@
-// import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { LinkStyled } from '../AppNav/AppNav.styled';
+import { LinkStyled } from '../LinkStyled';
 
 export const AuthNav = () => {
   return (
