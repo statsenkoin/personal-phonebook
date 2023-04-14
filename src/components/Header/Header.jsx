@@ -9,7 +9,7 @@ export function Header() {
   const { isLoggedIn } = useAuth();
   return (
     <AppBar position="fixed">
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Toolbar disableGutters>
           <AppNav />
           {isLoggedIn ? <UserMenu /> : <AuthNav />}
