@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/personal-phonebook/static/css/main.389db15e.css",
-    "main.js": "/personal-phonebook/static/js/main.e1ae6781.js",
+    "main.js": "/personal-phonebook/static/js/main.683457a4.js",
     "static/js/544.8b407306.chunk.js": "/personal-phonebook/static/js/544.8b407306.chunk.js",
-    "static/js/643.9c8de052.chunk.js": "/personal-phonebook/static/js/643.9c8de052.chunk.js",
-    "static/js/427.523eadc3.chunk.js": "/personal-phonebook/static/js/427.523eadc3.chunk.js",
-    "static/js/969.b8fd9a1d.chunk.js": "/personal-phonebook/static/js/969.b8fd9a1d.chunk.js",
+    "static/js/643.225be459.chunk.js": "/personal-phonebook/static/js/643.225be459.chunk.js",
+    "static/js/427.814473de.chunk.js": "/personal-phonebook/static/js/427.814473de.chunk.js",
+    "static/js/969.8f76036b.chunk.js": "/personal-phonebook/static/js/969.8f76036b.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/personal-phonebook/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/personal-phonebook/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/personal-phonebook/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
@@ -40,14 +40,14 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/personal-phonebook/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/personal-phonebook/index.html",
     "main.389db15e.css.map": "/personal-phonebook/static/css/main.389db15e.css.map",
-    "main.e1ae6781.js.map": "/personal-phonebook/static/js/main.e1ae6781.js.map",
+    "main.683457a4.js.map": "/personal-phonebook/static/js/main.683457a4.js.map",
     "544.8b407306.chunk.js.map": "/personal-phonebook/static/js/544.8b407306.chunk.js.map",
-    "643.9c8de052.chunk.js.map": "/personal-phonebook/static/js/643.9c8de052.chunk.js.map",
-    "427.523eadc3.chunk.js.map": "/personal-phonebook/static/js/427.523eadc3.chunk.js.map",
-    "969.b8fd9a1d.chunk.js.map": "/personal-phonebook/static/js/969.b8fd9a1d.chunk.js.map"
+    "643.225be459.chunk.js.map": "/personal-phonebook/static/js/643.225be459.chunk.js.map",
+    "427.814473de.chunk.js.map": "/personal-phonebook/static/js/427.814473de.chunk.js.map",
+    "969.8f76036b.chunk.js.map": "/personal-phonebook/static/js/969.8f76036b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.389db15e.css",
-    "static/js/main.e1ae6781.js"
+    "static/js/main.683457a4.js"
   ]
 }
