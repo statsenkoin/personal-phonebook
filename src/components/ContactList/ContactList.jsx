@@ -3,11 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { selectVisibleContacts } from 'redux/contacts/selectors';
 import { deleteContact } from 'redux/contacts/operations';
-// import {
-//   ContactListWrapper,
-//   ListItem,
-//   DeleteButton,
-// } from './ContactList.styled';
 
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
