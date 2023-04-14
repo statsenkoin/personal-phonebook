@@ -1,8 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { logIn } from 'redux/auth/operations';
+
+import { TextField } from 'formik-mui';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 const SubmitSchema = Yup.object().shape({
   email: Yup.string().nullable().email().required('Enter email'),
@@ -31,15 +35,29 @@ export function LoginForm() {
         }}
       >
         <Form>
-          <label htmlFor="email">Email:</label>
-          <Field type="email" name="email" placeholder="Enter email" />
-          <ErrorMessage name="email" component="span"></ErrorMessage>
-
-          <label htmlFor="password">Password:</label>
-          <Field type="password" name="password" placeholder="Enter password" />
-          <ErrorMessage name="password" component="span"></ErrorMessage>
-
-          <button type="submit">Register</button>
+          <Box marginY={1} sx={{ width: 350 }}>
+            <Field
+              component={TextField}
+              type="email"
+              label="Email*"
+              name="email"
+              size="small"
+              fullWidth
+            />
+          </Box>
+          <Box marginY={1} sx={{ width: 350 }}>
+            <Field
+              component={TextField}
+              type="password"
+              label="Password*"
+              name="password"
+              size="small"
+              fullWidth
+            />
+          </Box>
+          <Button variant="contained" type="submit" fullWidth>
+            Log in
+          </Button>
         </Form>
       </Formik>
     </div>
